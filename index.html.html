@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depot Sukarasa</title>
+  <style>
+    /* Reset */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      color: #222;
+    }
+
+    header p {
+      color: #777;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b8860b;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .menu-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-info h3 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .menu-info p {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    .price {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #b8860b;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DEPOT SUKARASA</h1>
+    <p>Rasa yang Selalu Dirindukan</p>
+  </header>
+
+  <nav>
+    <a href="#makanan">Makanan</a>
+    <a href="#camilan">Camilan</a>
+    <a href="#minuman">Minuman</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <!-- Makanan -->
+    <h2 id="makanan">🍲 Menu Makanan</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?stirfry" alt="Capcay Original">
+        <div class="menu-info">
+          <h3>Capcay Original</h3>
+          <p>Sayuran segar dengan bumbu gurih khas.</p>
+          <div class="price">Rp20.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?spicy" alt="Capcay Merah">
+        <div class="menu-info">
+          <h3>Capcay Merah</h3>
+          <p>Capcay pedas manis dengan rasa menggoda.</p>
+          <div class="price">Rp22.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?soup" alt="Sup Ayam">
+        <div class="menu-info">
+          <h3>Sup Ayam</h3>
+          <p>Hangat, gurih, cocok untuk segala suasana.</p>
+          <div class="price">Rp18.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?fried-rice" alt="Nasi Goreng Spesial">
+        <div class="menu-info">
+          <h3>Nasi Goreng Spesial</h3>
+          <p>Nasi goreng dengan topping lengkap.</p>
+          <div class="price">Rp25.000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Camilan -->
+    <h2 id="camilan">🥟 Camilan</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?dumpling" alt="Gyoza">
+        <div class="menu-info">
+          <h3>Gyoza</h3>
+          <p>Dibuat fresh dengan isian daging pilihan.</p>
+          <div class="price">Rp18.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?fries" alt="Kentang Goreng">
+        <div class="menu-info">
+          <h3>Kentang Goreng</h3>
+          <p>Kentang renyah dengan saus pilihan.</p>
+          <div class="price">Rp12.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?dimsum" alt="Dimsum">
+        <div class="menu-info">
+          <h3>Dimsum</h3>
+          <p>Aneka dimsum kukus lembut dan gurih.</p>
+          <div class="price">Rp20.000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minuman -->
+    <h2 id="minuman">🥤 Minuman</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?iced-tea" alt="Es Teh">
+        <div class="menu-info">
+          <h3>Es Teh</h3>
+          <p>Segar untuk menemani santapan Anda.</p>
+          <div class="price">Rp5.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?orange-juice" alt="Es Jeruk">
+        <div class="menu-info">
+          <h3>Es Jeruk</h3>
+          <p>Perasan jeruk asli, segar alami.</p>
+          <div class="price">Rp8.000</div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?coffee" alt="Kopi Tubruk">
+        <div class="menu-info">
+          <h3>Kopi Tubruk</h3>
+          <p>Kopi hitam pekat khas nusantara.</p>
+          <div class="price">Rp10.000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <h2 id="kontak">📞 Kontak</h2>
+    <div style="text-align:center; margin-top:20px;">
+      <p>📍 Jl. Raya Sukarasa No. 12, Malang</p>
+      <p>☎️ 0812-3456-7890</p>
+      <p>🕒 Jam Buka: 10.00 - 22.00 WIB</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Depot Sukarasa | Desain Elegan & Modern</p>
+  </footer>
+
+</body>
+</html>
